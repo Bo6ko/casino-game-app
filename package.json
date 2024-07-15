@@ -1,0 +1,44 @@
+{
+  "name": "casino-game-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "jest --watchAll --detectOpenHandles --config ./dist/jest.config.js",
+    "start": "nodemon --exec \"node --openssl-legacy-provider\" ./dist/server.js",
+    "database:create": "node ./dist/database/create_database.js",
+    "database:migration": "node ./dist/database/migrate_database.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "B Shopov",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "4.12",
+    "express-busboy": "^10.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@types/mysql": "^2.15.26",
+    "@types/supertest": "^6.0.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

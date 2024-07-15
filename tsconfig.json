@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "ES2020"],
+    "target": "es2020",
+    "module": "ESNext",
+    "noPropertyAccessFromIndexSignature": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "noEmitOnError": true,
+    "declaration": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "checkJs": false,
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": ["api/**/*", "database/*", "server.ts", "jest.config.ts", "jest.setup.ts"],
+  "exclude": ["node_modules"]
+}
